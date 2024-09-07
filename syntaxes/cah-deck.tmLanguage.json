@@ -1,0 +1,18 @@
+{
+    "scopeName": "source.cah-deck",
+    "patterns": [
+      {
+        "name": "comment.line.double-slash.cah-deck",
+        "match": "//.*$"
+      },
+      {
+        "name": "constant.character.cah-deck",
+        "match": "\"[^\"]*\""
+      },
+      {
+        "name": "meta.embedded.block.cah-deck",
+        "match": "{[^}]*}"
+      }
+    ]
+  }
+  

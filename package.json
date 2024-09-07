@@ -1,0 +1,66 @@
+{
+  "name": "cah-deck-extension",
+  "displayName": "CAH Deck Extension",
+  "description": "Assistant to manage ManyDecks format for card deck.",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [""],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "cahDeckFile",
+        "aliases": ["CAH Deck File", "cah-deck"],
+        "extensions": [".deck.json5"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cahDeckFile",
+        "scopeName": "source.cah-deck",
+        "path": "./syntaxes/cah-deck.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "extension.createCallCardStartBlank",
+        "title": "Create Call Card (Starting with Blank)"
+      },
+      {
+        "command": "extension.createCallCardEndBlank",
+        "title": "Create Call Card (Ending with Blank)"
+      },
+      {
+        "command": "extension.createCallCardMiddleBlank",
+        "title": "Create Call Card (Blank in the Middle)"
+      },
+      {
+        "command": "extension.createResponseCard",
+        "title": "Create Response Card"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "typescript": "^5.5.4",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
