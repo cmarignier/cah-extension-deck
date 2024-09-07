@@ -1,5 +1,11 @@
 import * as vscode from 'vscode';
 
+const outputChannel = vscode.window.createOutputChannel('CAH Deck Extension');
+
+function logError(error: Error) {
+  outputChannel.appendLine(`Error: ${error.message}`);
+}
+
 export function activate(context: vscode.ExtensionContext) {
   // Register commands for each new functionality
   const commands = [

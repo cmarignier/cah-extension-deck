@@ -2,7 +2,7 @@
   "name": "cah-deck-extension",
   "displayName": "CAH Deck Extension",
   "description": "VSCode extension for Cards Against Humanity deck files.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "cmarignier",
   "engines": {
     "vscode": "^1.70.0"
