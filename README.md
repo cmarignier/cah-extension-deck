@@ -4,6 +4,8 @@
 
 ## [0.0.2] - 2024-09-07
 
+Update package infos and add commands.
+
 ## Features
 
 - **Create Call Cards**:
@@ -82,5 +84,5 @@ Contributions are welcome! Please follow these steps to contribute:
 3.
 
 
-[0.0.2]: https://github.com/markdown-it/markdown-it/compare/0.0.1...0.0.2
-[0.0.1]: https://github.com/markdown-it/markdown-it/releases/tag/0.0.1
+[0.0.2]: https://github.com/cmarignier/cah-extension-deck/compare/0.0.1...0.0.2
+[0.0.1]: https://github.com/cmarignier/cah-extension-deck/releases/tag/0.0.1
